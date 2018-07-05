@@ -1,13 +1,14 @@
-#!/usr/local/bin/perl -w
+#!/usr/bin/env perl
 use strict;
 use v5.10;
+use lib './';
 use experimental 'smartmatch';
 use CGI;
 use URI;
 use RDF::Trine;
-use FAIR::Accessor::Distribution;
-use FAIR::Accessor::Container;
-use FAIR::Accessor::MetaRecord;
+# use FAIR::Accessor::Distribution;
+# use FAIR::Accessor::Container;
+# use FAIR::Accessor::MetaRecord;
 
 # use Class::Inpector; #  one day check if execute is exported from the module
 use JSON::Parse 'parse_json';
